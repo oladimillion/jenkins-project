@@ -1,3 +1,4 @@
+import time
 import jenkins
 
 
@@ -38,6 +39,8 @@ def get_jobs_info():
         health_score = None
         health_color = None
 
+        checked_at = None
+
         if len(health_report):
 
             health_description = health_report[0]['description']
@@ -66,9 +69,11 @@ def get_jobs_info():
         health_description = str(health_description)
         health_score = str(health_score)
 
+        checked_at = time.ctime()
+
         job_list.append((name, url, last_build_number, last_successful_build_number,
                         last_unsuccessful_build_number, last_stable_build_number,
-                        health_color, health_description, health_score))
+                        health_color, health_description, health_score, checked_at))
 
     return job_list
 
