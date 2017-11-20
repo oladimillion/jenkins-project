@@ -3,7 +3,7 @@
 
 ### To Get Started
 ```bash
-$ git clone https://github.com/oladimillion/jenkinsproject.git
+$ git clone https://github.com/oladimillion/jenkins-project.git
 ```
 
 ```bash
