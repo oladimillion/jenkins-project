@@ -10,13 +10,13 @@ $ git clone https://github.com/oladimillion/jenkins-project.git
 $ pip install python-jenkins
 ```
 
-### Save list of jobs and status to database
+### Save jobs and their status into the database
 ```bash
 $ python db_save.py
 ```
 
-### Print list of saved jobs and status from database
+### Output saved jobs and status from the database
 ```bash
-$ python db_fetch.py
+$ python db_print.py
 ```
 
